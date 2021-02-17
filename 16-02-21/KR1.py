@@ -40,10 +40,14 @@ def thirdEx():
         words.append(input("Enter your word: "))
         i -= 1
     j = int(input('Input check words count: '))
-
+    print(words)
     check = []
     while j != 0:
-        words.append(input("Enter your word: "))
-        i -= 1
+        words.append(str(input("Enter your word: ")))
+        j -= 1
+    # for word in check:
+    #     print(word in words)
+    print(check)
+
 
 print(thirdEx())
