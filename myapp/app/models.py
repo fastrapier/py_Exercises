@@ -23,3 +23,7 @@ class Order(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     products = models.ManyToManyField(Product)
     total_price = models.IntegerField
+
+
+class aa(models.Model):
+    title = models.CharField(max_length=10)
